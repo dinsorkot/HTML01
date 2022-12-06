@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    color: #17120e;
+    font-family: 'Bebas Neue', serif;
+    position:relative;
+}
+/*
+.cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: -20px -20px;
+    background-color:none;
+    border: 1px solid black;
+    border-radius: 100%;
+    backface-visibility: hidden;
+}
+*/
+.nav {
+    height: 50px;
+    display:flex;
+    /*background-color: #efbd30;*/
+    align-items:center; 
+    justify-content:space-between;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+    font-size: 30px;
+}
+
+.logo a {
+    color: black;
+    text-decoration:none;
+}
+
+.logo a:hover {
+    color: #efbd30;
+    text-decoration:none;
+}
+
+.menu ul {
+    position: relative;
+    top: 10px;
+    right:40px;
+}
+
+.menu li{
+    display:inline-block;
+
+}
+
+.menu a {
+    color: black;
+    text-decoration:none;
+    font-size:18px;
+    padding-right:15px;
+}
+
+.menu a:hover {
+    color: #efbd30;
+    text-decoration:none;
+    font-size:18px;
+    padding-right:15px;
+}
+
+.boder {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #efbd30;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    width: 700px;
+    height: 350px;
+}
+
+.pic {
+    left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    cursor:pointer;
+}
+
+.pic img {
+    transition: 0.3s;
+    width: 22rem;
+    filter: drop-shadow(0.2rem 0.4rem 0.3rem rgb(0, 0, 0));
+}
+.pic img:hover {
+    width: 20rem;
+    transform: translate(-8rem );
+    display:block;
+}
+
+.content {
+    top: 18px;
+    padding: 5px;
+    position: relative;
+    left: 48%;
+    width: 350px;
+}
+.content .info h2 {
+    font-weight: 700;
+}
+
+.content .info {
+    display: none;
+}
+
+.workshop {
+    position: relative;
+    top: 500px;
+}
+
+.text {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-bottom: 0px;
+    z-index: 2;
+}
+
+.text li {
+    display: inline-block;
+    float: left;
+    font-size:1.5em;
+    font-weight: 700;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;   
+}
+/*
+.text.hidden {
+    border-bottom: 1px solid black;
+}
+*/
+.text.hidden li.spaced {
+    padding-left: 0;
+}
+.text li.spaced {
+    padding-left: 0.5em;
+}
+.text.hidden li.ghost {
+    opacity: 0;
+    max-width: 0;
+}
+
+.boxs {
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    left: 51%;
+    transform: translateX(-50%);
+    position: relative;
+    background-color: #efbd30;
+    z-index: 1;
+}
+
+.about {
+    text-align: center;
+    top: 120px;
+    position: relative;
+}
+
+.icons {
+    top: 180px;
+    position:relative;
+}
+
+.icons button{
+    transition: 0.3s;
+    left: 45%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: #17120e;
+    border: none;
+    border-radius: 10px;
+}
+
+.icons button:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.icons button svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.footer {
+    z-index: 0;
+    top: 400px;
+    height: 120px;
+    position: relative;
+    background-color: #17120e;
+}
